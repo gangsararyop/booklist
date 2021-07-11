@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: silver;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container{
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.input{
+    margin-left: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.card-input{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+    height: 380px;
+    font-family: 'Poppins', sans-serif;   
+    background-color: #E1E8EB;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-input h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;  
+    font-weight: normal;
+
+}
+
+.card-input .judul{
+    margin-top: 15px;
+}
+
+.judul #judul{
+    border-style: none;
+    border-bottom: 2px solid #343A40;
+    background-color: #E1E8EB;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+.card-input .penulis{
+    margin-top: 15px;
+}
+
+.penulis #penulis{
+    border-style: none;
+    border-bottom: 2px solid #343A40;
+    background-color: #E1E8EB;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+.card-input .tahun{
+    margin-top: 15px;
+}
+
+.tahun #tahun{
+    border-style: none;
+    border-bottom: 2px solid #343A40;
+    background-color: #E1E8EB;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+.input label{
+    position: relative;
+    margin-left: 8px;
+}
+
+.dibaca h4{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.input .dibaca{
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.input #dibaca{
+    margin-top: 7px;
+}
+
+.input .submit{
+    text-align: center;
+    margin-top: 13px;
+}
+
+.submit input{
+    opacity: 1;
+    cursor:pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.submit input:hover{
+    opacity: 0.8;
+}
+
+.submit input:active{
+    position: relative;
+    right: 1px;
+    top: 2px;
+}
+
+
+.submit #submitButton{
+    border-style: none;
+    font-size: 12px;
+    padding: 7px 40px;
+    background-color: #343A40;
+    color: #E1E8EB;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px 0px black;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.cari{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: 100%;
+    background-color: #E1E8EB;
+    border-radius: 10px;
+}
+
+.cari #cari{
+    font-family: 'Poppins', sans-serif;   
+    background-color: #E1E8EB;
+    border-style: none;
+    border-bottom: 2px solid #343A40;
+    margin-left: 8px;
+    font-size: 11px;
+    padding: 3px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.cari #findBtn{
+    margin-right: 5px;
+    margin-top: 5px;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;  
+    font-size: 11px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #343A40;
+    color: #E1E8EB;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.cari #findBtn:hover{
+    opacity: 0.8;
+}
+
+.cari #findBtn:active{
+    position: relative;
+    right: 1px;
+    top: 1px;
+}
+
+.column-left .belum-dibaca{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: 100%;
+    background-color: #E1E8EB;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 7px;
+    position: relative;
+}
+
+.column-left .belum-dibaca h4{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.column-left .sudah-dibaca{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    width: 100%;
+    background-color: #E1E8EB;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 7px;
+    position: relative;
+}
+
+.column-left .sudah-dibaca h4{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.book{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    background-color: #A6A9B6;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+    box-shadow: -2px 3px 1px 0 black;
+}
+
+.book h2{
+    font-size: 14px;
+    display: inline;
+    margin-right: 5px;
+    color: black;
+}
+
+.book .tahun-buku{
+    display: inline;
+    font-size: 10px;
+}
+
+.book p{
+    font-size: 10px;
+}
+
+.text-container{
+    margin-left: 5px;
+    padding: 3px;
+    width: 80%;
+}
+
+button.hapusBtn{    
+    border-style: none;
+    background-color: #F4C7AB;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 7px;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    padding: -2.5px 3px;
+    cursor: pointer;   
+    transition: all 0.5s;
+}
+
+button.hapusBtn:hover{
+    background-color: #b6947f;
+    transition: 0.5s;
+}
+
+button.completeBtn, button.not-complete-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 7px;
+    margin: 0 5px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: -2px 3px 2px 0 black;
+}
+
+button.completeBtn:hover, button.not-complete-btn:hover{
+    background-color: #787c88;
+    transition: 0.5s;
+}

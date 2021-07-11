@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Bookshelf Apps</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="card-input">
+            <h3>Input Buku Baru</h3> 
+            <form class="input" action="#" id="form">
+                <div class="judul">
+                    <label for="judul">Judul</label><br>
+                    <input type="text" id="judul" name="judul" required><br>
+                </div>
+                <div class="penulis">
+                    <label for="penulis">Penulis</label><br>
+                    <input type="text" id="penulis" name="penulis" required><br>
+                </div>
+                <div class="tahun">
+                    <label for="tahun">Tahun</label><br>
+                    <input type="number" id="tahun" name="tahun" required><br>
+                </div>
+                <div class="dibaca">
+                    <h4>Sudah Dibaca?</h4>
+                    <input type="checkbox" id="dibaca" name="belum-dibaca">
+                    <p>*Jika sudah centang box di atas.</p>
+                </div>
+                <div class="submit">
+                    <input id="submitButton" type="submit" value="SUBMIT" name="submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="column-left">
+            <form class="cari"  id="findItem">
+                <input type="text" id="cari" name="cari">
+                <input id="findBtn" type="submit" value="Cari">
+            </form>
+            <div class="list-buku">
+                <div class="belum-dibaca">
+                    <h4>Belum dibaca</h4>
+                    <div class="list-buku" id="is-not-completed">
+                        
+                    </div>
+                </div>
+    
+                <div class="sudah-dibaca">
+                    <h4>Sudah Dibaca</h4>
+                    <div class="list-buku" id="is-completed">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="data.js" type="text/javascript"></script>
+    <script src="dom.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
